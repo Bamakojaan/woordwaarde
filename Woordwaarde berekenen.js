@@ -23,8 +23,8 @@ function Calculate1 (event) {
 
 function Calculate26 (event) {
 
-	var alphabet = 
-	["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+	var alphabet2 = 
+	["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "];
 
 	var woord = document.getElementById("name26").value;
 	woord = woord.toLowerCase();
@@ -32,12 +32,14 @@ function Calculate26 (event) {
 	var Sum26 = 0;
 
 	for ( i = 0; i < x; i++) {
+		
+
 		function Check (abc) {
 			return abc === woord.charAt(i);
 		};
 
-		var number26 = 26 - (alphabet.findIndex(Check));
-
+		number26 = 26 - (alphabet2.findIndex(Check));
+		
 		Sum26 = Sum26 + number26;
 	};
 
